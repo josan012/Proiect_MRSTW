@@ -307,6 +307,16 @@
     <Content Include="Scripts\jquery-3.7.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\handmadeShop.BusinessLogic\handmadeShop.BusinessLogic.csproj">
+      <Project>{44c19b1f-d848-49ab-9b20-41a26669a5ce}</Project>
+      <Name>handmadeShop.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\handmadeShop.Domain\handmadeShop.Domain.csproj">
+      <Project>{4c154fd7-a3be-4dba-b4f2-1dca422fceb2}</Project>
+      <Name>handmadeShop.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
