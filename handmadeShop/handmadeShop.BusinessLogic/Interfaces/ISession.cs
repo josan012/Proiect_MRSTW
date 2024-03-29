@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace handmadeShop.BusinessLogic
+namespace handmadeShop.BusinessLogic.Interfaces
 {
-    public class Class1
+    public class ISession 
     {
     }
 }

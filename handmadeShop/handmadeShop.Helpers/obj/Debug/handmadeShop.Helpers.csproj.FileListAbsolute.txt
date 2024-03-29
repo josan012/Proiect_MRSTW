@@ -1,0 +1,6 @@
+C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Helpers\bin\Debug\handmadeShop.Helpers.dll
+C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Helpers\bin\Debug\handmadeShop.Helpers.pdb
+C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Helpers\obj\Debug\handmadeShop.Helpers.csproj.AssemblyReference.cache
+C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Helpers\obj\Debug\handmadeShop.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Helpers\obj\Debug\handmadeShop.Helpers.dll
+C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Helpers\obj\Debug\handmadeShop.Helpers.pdb
