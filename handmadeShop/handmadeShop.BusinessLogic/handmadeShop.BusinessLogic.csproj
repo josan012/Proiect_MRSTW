@@ -50,5 +50,11 @@
     <Folder Include="Interfaces\" />
     <Folder Include="Services\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\handmadeShop.Domain\handmadeShop.Domain.csproj">
+      <Project>{7ab02190-f53e-4bc5-9f6b-9c20de84edd4}</Project>
+      <Name>handmadeShop.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
