@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5E9527A9-F11D-4326-AB5D-86B4DBC0A9BD}|handmadeShop.Web\\handmadeShop.Web.csproj|c:\\proiect_mrsutw\\proiect_mrstw\\handmadeshop\\handmadeshop.web\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5E9527A9-F11D-4326-AB5D-86B4DBC0A9BD}|handmadeShop.Web\\handmadeShop.Web.csproj|solutionrelative:handmadeshop.web\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Web\\Web.config",
+              "RelativeDocumentMoniker": "handmadeShop.Web\\Web.config",
+              "ToolTip": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Web\\Web.config",
+              "RelativeToolTip": "handmadeShop.Web\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-20T19:46:54.813Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
