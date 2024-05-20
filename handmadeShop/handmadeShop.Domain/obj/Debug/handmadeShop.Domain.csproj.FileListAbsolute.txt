@@ -1,9 +1,0 @@
-C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\bin\Debug\handmadeShop.Domain.dll
-C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\bin\Debug\handmadeShop.Domain.pdb
-C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\bin\Debug\handmadeShop.Helpers.dll
-C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\bin\Debug\handmadeShop.Helpers.pdb
-C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmadeShop.Domain.csproj.AssemblyReference.cache
-C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmadeShop.Domain.csproj.CoreCompileInputs.cache
-C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmadeShop.Domain.csproj.CopyComplete
-C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmadeShop.Domain.dll
-C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmadeShop.Domain.pdb
