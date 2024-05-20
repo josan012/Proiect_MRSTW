@@ -5,12 +5,6 @@ VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "handmadeShop.Web", "handmadeShop.Web\handmadeShop.Web.csproj", "{5E9527A9-F11D-4326-AB5D-86B4DBC0A9BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "handmadeShop.BusinessLogic", "handmadeShop.BusinessLogic\handmadeShop.BusinessLogic.csproj", "{44C19B1F-D848-49AB-9B20-41A26669A5CE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "handmadeShop.Domain", "handmadeShop.Domain\handmadeShop.Domain.csproj", "{4C154FD7-A3BE-4DBA-B4F2-1DCA422FCEB2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "handmadeShop.Helpers", "handmadeShop.Helpers\handmadeShop.Helpers.csproj", "{1657BF2E-73EB-4FA5-BECC-F696116F9DCE}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,18 +15,6 @@ Global
 		{5E9527A9-F11D-4326-AB5D-86B4DBC0A9BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E9527A9-F11D-4326-AB5D-86B4DBC0A9BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E9527A9-F11D-4326-AB5D-86B4DBC0A9BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{44C19B1F-D848-49AB-9B20-41A26669A5CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{44C19B1F-D848-49AB-9B20-41A26669A5CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{44C19B1F-D848-49AB-9B20-41A26669A5CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{44C19B1F-D848-49AB-9B20-41A26669A5CE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4C154FD7-A3BE-4DBA-B4F2-1DCA422FCEB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4C154FD7-A3BE-4DBA-B4F2-1DCA422FCEB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4C154FD7-A3BE-4DBA-B4F2-1DCA422FCEB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4C154FD7-A3BE-4DBA-B4F2-1DCA422FCEB2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1657BF2E-73EB-4FA5-BECC-F696116F9DCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1657BF2E-73EB-4FA5-BECC-F696116F9DCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1657BF2E-73EB-4FA5-BECC-F696116F9DCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1657BF2E-73EB-4FA5-BECC-F696116F9DCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
