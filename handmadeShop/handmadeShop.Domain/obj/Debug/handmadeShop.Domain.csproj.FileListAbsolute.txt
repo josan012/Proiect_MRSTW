@@ -1,0 +1,14 @@
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmadeShop.Domain.csproj.AssemblyReference.cache
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmadeShop.Domain.csproj.CoreCompileInputs.cache
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\bin\Debug\handmadeShop.Domain.dll.config
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\bin\Debug\handmadeShop.Domain.dll
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\bin\Debug\handmadeShop.Domain.pdb
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\bin\Debug\AutoMapper.dll
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\bin\Debug\EntityFramework.dll
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\bin\Debug\AutoMapper.xml
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\bin\Debug\EntityFramework.xml
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmade.18C8B75A.Up2Date
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmadeShop.Domain.dll
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmadeShop.Domain.pdb

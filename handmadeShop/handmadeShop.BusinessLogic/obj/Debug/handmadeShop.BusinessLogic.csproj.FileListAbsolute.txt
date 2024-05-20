@@ -1,0 +1,17 @@
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.BusinessLogic\obj\Debug\handmadeShop.BusinessLogic.csproj.AssemblyReference.cache
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.BusinessLogic\obj\Debug\handmadeShop.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.BusinessLogic\bin\Debug\handmadeShop.BusinessLogic.dll.config
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.BusinessLogic\bin\Debug\handmadeShop.BusinessLogic.dll
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.BusinessLogic\bin\Debug\handmadeShop.BusinessLogic.pdb
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.BusinessLogic\bin\Debug\AutoMapper.dll
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.BusinessLogic\bin\Debug\EntityFramework.dll
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.BusinessLogic\bin\Debug\handmadeShop.Domain.dll
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.BusinessLogic\bin\Debug\handmadeShop.Domain.pdb
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.BusinessLogic\bin\Debug\handmadeShop.Domain.dll.config
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.BusinessLogic\bin\Debug\AutoMapper.xml
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.BusinessLogic\bin\Debug\EntityFramework.xml
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.BusinessLogic\obj\Debug\handmade.D73F1F0E.Up2Date
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.BusinessLogic\obj\Debug\handmadeShop.BusinessLogic.dll
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.BusinessLogic\obj\Debug\handmadeShop.BusinessLogic.pdb
