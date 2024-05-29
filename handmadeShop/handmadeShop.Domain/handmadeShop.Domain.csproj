@@ -145,6 +145,7 @@
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ClientManager.cs" />
+    <Compile Include="Repositories\DeliveryCostRepository.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
