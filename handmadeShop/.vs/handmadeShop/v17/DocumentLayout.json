@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E9527A9-F11D-4326-AB5D-86B4DBC0A9BD}|handmadeShop.Web\\handmadeShop.Web.csproj|c:\\proiect_mrsutw\\proiect_mrstw\\handmadeshop\\handmadeshop.web\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{5E9527A9-F11D-4326-AB5D-86B4DBC0A9BD}|handmadeShop.Web\\handmadeShop.Web.csproj|solutionrelative:handmadeshop.web\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{7AB02190-F53E-4BC5-9F6B-9C20DE84EDD4}|handmadeShop.Domain\\handmadeShop.Domain.csproj|c:\\proiect_mrsutw\\proiect_mrstw\\handmadeshop\\handmadeshop.domain\\identity\\applicationusermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AB02190-F53E-4BC5-9F6B-9C20DE84EDD4}|handmadeShop.Domain\\handmadeShop.Domain.csproj|solutionrelative:handmadeshop.domain\\identity\\applicationusermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AB02190-F53E-4BC5-9F6B-9C20DE84EDD4}|handmadeShop.Domain\\handmadeShop.Domain.csproj|c:\\proiect_mrsutw\\proiect_mrstw\\handmadeshop\\handmadeshop.domain\\repositories\\clientmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AB02190-F53E-4BC5-9F6B-9C20DE84EDD4}|handmadeShop.Domain\\handmadeShop.Domain.csproj|solutionrelative:handmadeshop.domain\\repositories\\clientmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AB02190-F53E-4BC5-9F6B-9C20DE84EDD4}|handmadeShop.Domain\\handmadeShop.Domain.csproj|c:\\proiect_mrsutw\\proiect_mrstw\\handmadeshop\\handmadeshop.domain\\interfaces\\iclientmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AB02190-F53E-4BC5-9F6B-9C20DE84EDD4}|handmadeShop.Domain\\handmadeShop.Domain.csproj|solutionrelative:handmadeshop.domain\\interfaces\\iclientmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AB02190-F53E-4BC5-9F6B-9C20DE84EDD4}|handmadeShop.Domain\\handmadeShop.Domain.csproj|c:\\proiect_mrsutw\\proiect_mrstw\\handmadeshop\\handmadeshop.domain\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AB02190-F53E-4BC5-9F6B-9C20DE84EDD4}|handmadeShop.Domain\\handmadeShop.Domain.csproj|solutionrelative:handmadeshop.domain\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientManager.cs",
+              "DocumentMoniker": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Domain\\Repositories\\ClientManager.cs",
+              "RelativeDocumentMoniker": "handmadeShop.Domain\\Repositories\\ClientManager.cs",
+              "ToolTip": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Domain\\Repositories\\ClientManager.cs",
+              "RelativeToolTip": "handmadeShop.Domain\\Repositories\\ClientManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T12:46:19.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IClientManager.cs",
+              "DocumentMoniker": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Domain\\Interfaces\\IClientManager.cs",
+              "RelativeDocumentMoniker": "handmadeShop.Domain\\Interfaces\\IClientManager.cs",
+              "ToolTip": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Domain\\Interfaces\\IClientManager.cs",
+              "RelativeToolTip": "handmadeShop.Domain\\Interfaces\\IClientManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T12:46:18.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Web\\Web.config",
-              "RelativeDocumentMoniker": "handmadeShop.Web\\Web.config",
-              "ToolTip": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Web\\Web.config",
-              "RelativeToolTip": "handmadeShop.Web\\Web.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-05-20T19:46:54.813Z",
+              "Title": "ApplicationUserManager.cs",
+              "DocumentMoniker": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Domain\\Identity\\ApplicationUserManager.cs",
+              "RelativeDocumentMoniker": "handmadeShop.Domain\\Identity\\ApplicationUserManager.cs",
+              "ToolTip": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Domain\\Identity\\ApplicationUserManager.cs",
+              "RelativeToolTip": "handmadeShop.Domain\\Identity\\ApplicationUserManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T12:46:16.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Domain\\Entities\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "handmadeShop.Domain\\Entities\\ApplicationUser.cs",
+              "ToolTip": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Domain\\Entities\\ApplicationUser.cs",
+              "RelativeToolTip": "handmadeShop.Domain\\Entities\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T12:45:16.971Z",
               "EditorCaption": ""
             }
           ]
