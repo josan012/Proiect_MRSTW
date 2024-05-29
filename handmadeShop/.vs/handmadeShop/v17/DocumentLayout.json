@@ -1,12 +1,69 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\MihaiJosan\\OneDrive - Technical University of Moldova\\Desktop\\MRSTW\\Proiect_MRSTW\\handmadeShop\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7AB02190-F53E-4BC5-9F6B-9C20DE84EDD4}|handmadeShop.Domain\\handmadeShop.Domain.csproj|c:\\users\\mihaijosan\\onedrive - technical university of moldova\\desktop\\mrstw\\proiect_mrstw\\handmadeshop\\handmadeshop.domain\\identity\\applicationusermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AB02190-F53E-4BC5-9F6B-9C20DE84EDD4}|handmadeShop.Domain\\handmadeShop.Domain.csproj|solutionrelative:handmadeshop.domain\\identity\\applicationusermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AB02190-F53E-4BC5-9F6B-9C20DE84EDD4}|handmadeShop.Domain\\handmadeShop.Domain.csproj|C:\\Users\\MihaiJosan\\OneDrive - Technical University of Moldova\\Desktop\\MRSTW\\Proiect_MRSTW\\handmadeShop\\handmadeshop.domain\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AB02190-F53E-4BC5-9F6B-9C20DE84EDD4}|handmadeShop.Domain\\handmadeShop.Domain.csproj|solutionrelative:handmadeshop.domain\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AB02190-F53E-4BC5-9F6B-9C20DE84EDD4}|handmadeShop.Domain\\handmadeShop.Domain.csproj|C:\\Users\\MihaiJosan\\OneDrive - Technical University of Moldova\\Desktop\\MRSTW\\Proiect_MRSTW\\handmadeShop\\handmadeshop.domain\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AB02190-F53E-4BC5-9F6B-9C20DE84EDD4}|handmadeShop.Domain\\handmadeShop.Domain.csproj|solutionrelative:handmadeshop.domain\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationUserManager.cs",
+              "DocumentMoniker": "C:\\Users\\MihaiJosan\\OneDrive - Technical University of Moldova\\Desktop\\MRSTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Domain\\Identity\\ApplicationUserManager.cs",
+              "RelativeDocumentMoniker": "handmadeShop.Domain\\Identity\\ApplicationUserManager.cs",
+              "ToolTip": "C:\\Users\\MihaiJosan\\OneDrive - Technical University of Moldova\\Desktop\\MRSTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Domain\\Identity\\ApplicationUserManager.cs",
+              "RelativeToolTip": "handmadeShop.Domain\\Identity\\ApplicationUserManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T15:33:49.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\MihaiJosan\\OneDrive - Technical University of Moldova\\Desktop\\MRSTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Domain\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "handmadeShop.Domain\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Users\\MihaiJosan\\OneDrive - Technical University of Moldova\\Desktop\\MRSTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Domain\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "handmadeShop.Domain\\Interfaces\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T15:33:44.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\MihaiJosan\\OneDrive - Technical University of Moldova\\Desktop\\MRSTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Domain\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "handmadeShop.Domain\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\MihaiJosan\\OneDrive - Technical University of Moldova\\Desktop\\MRSTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Domain\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "handmadeShop.Domain\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T15:33:39.043Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
