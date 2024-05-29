@@ -1,4 +1,5 @@
-﻿/*using Microsoft.AspNet.Identity;
+﻿using handmadeShop.Domain.Entities;
+using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,4 +14,3 @@ namespace handmadeShop.Domain.Identity
 
     }
 }
-*/
