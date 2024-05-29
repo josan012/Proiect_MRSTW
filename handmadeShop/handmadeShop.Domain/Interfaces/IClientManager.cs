@@ -1,4 +1,5 @@
-﻿/*using System;
+﻿using handmadeShop.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,4 +15,3 @@ namespace handmadeShop.Domain.Interfaces
         ClientProfile GetClientProfileById(string Id);
     }
 }
-*/
