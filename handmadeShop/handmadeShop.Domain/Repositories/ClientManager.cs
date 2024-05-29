@@ -1,4 +1,6 @@
-﻿/*using System;
+﻿using handmadeShop.Domain.Entities;
+using handmadeShop.Domain.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -7,7 +9,6 @@ using System.Threading.Tasks;
 
 namespace handmadeShop.Domain.Repositories
 {
-    internal class ClientManager
     public class ClientManager : IClientManager
     {
         public EF.AppContext DataBase { get; set; }
@@ -59,4 +60,3 @@ namespace handmadeShop.Domain.Repositories
         }
     }
 }
-*/
