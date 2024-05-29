@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7AB02190-F53E-4BC5-9F6B-9C20DE84EDD4}|handmadeShop.Domain\\handmadeShop.Domain.csproj|c:\\proiect_mrsutw\\proiect_mrstw\\handmadeshop\\handmadeshop.domain\\repositories\\discountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AB02190-F53E-4BC5-9F6B-9C20DE84EDD4}|handmadeShop.Domain\\handmadeShop.Domain.csproj|solutionrelative:handmadeshop.domain\\repositories\\discountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DiscountRepository.cs",
+              "DocumentMoniker": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Domain\\Repositories\\DiscountRepository.cs",
+              "RelativeDocumentMoniker": "handmadeShop.Domain\\Repositories\\DiscountRepository.cs",
+              "ToolTip": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Domain\\Repositories\\DiscountRepository.cs",
+              "RelativeToolTip": "handmadeShop.Domain\\Repositories\\DiscountRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T18:03:58.536Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
