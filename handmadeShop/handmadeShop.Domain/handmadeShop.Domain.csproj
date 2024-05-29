@@ -147,6 +147,10 @@
     <Compile Include="Repositories\ClientManager.cs" />
     <Compile Include="Repositories\DeliveryCostRepository.cs" />
     <Compile Include="Repositories\DiscountRepository.cs" />
+    <Compile Include="Repositories\EFUnitOfWork.cs" />
+    <Compile Include="Repositories\OrderRepository.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="Repositories\ReservationRepository.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
