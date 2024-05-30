@@ -3,12 +3,10 @@ using handmadeShop.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace handmadeShop.Domain.Repositories
 {
-     public class DeliveryCostRepository : IRepository<DeliveryCost>
+    public class DeliveryCostRepository : IRepository<DeliveryCost>
      {
           private EF.AppContext db;
           public DeliveryCostRepository(EF.AppContext db)

@@ -128,7 +128,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessModels\CustomValidator.cs" />
     <Compile Include="BusinessModels\Item.cs" />
+    <Compile Include="DTO\ProductDTO.cs" />
+    <Compile Include="DTO\ReservationTableDTO.cs" />
     <Compile Include="DTO\UserDTO.cs" />
     <Compile Include="Infrastructure\OperationDetails.cs" />
     <Compile Include="Interfaces\IUserServices.cs" />
