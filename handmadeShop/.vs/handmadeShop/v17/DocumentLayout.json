@@ -1,18 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\MihaiJosan\\OneDrive - Technical University of Moldova\\Desktop\\MRSTW\\Proiect_MRSTW\\handmadeShop\\",
+  "WorkspaceRootPath": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1984CC5A-F9DF-4F3E-91A6-4860B7EC4ACE}|handmadeShop.BusinessLogic\\handmadeShop.BusinessLogic.csproj|c:\\users\\mihaijosan\\onedrive - technical university of moldova\\desktop\\mrstw\\proiect_mrstw\\handmadeshop\\handmadeshop.businesslogic\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1984CC5A-F9DF-4F3E-91A6-4860B7EC4ACE}|handmadeShop.BusinessLogic\\handmadeShop.BusinessLogic.csproj|solutionrelative:handmadeshop.businesslogic\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1984CC5A-F9DF-4F3E-91A6-4860B7EC4ACE}|handmadeShop.BusinessLogic\\handmadeShop.BusinessLogic.csproj|c:\\users\\mihaijosan\\onedrive - technical university of moldova\\desktop\\mrstw\\proiect_mrstw\\handmadeshop\\handmadeshop.businesslogic\\services\\editproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1984CC5A-F9DF-4F3E-91A6-4860B7EC4ACE}|handmadeShop.BusinessLogic\\handmadeShop.BusinessLogic.csproj|solutionrelative:handmadeshop.businesslogic\\services\\editproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1984CC5A-F9DF-4F3E-91A6-4860B7EC4ACE}|handmadeShop.BusinessLogic\\handmadeShop.BusinessLogic.csproj|c:\\users\\mihaijosan\\onedrive - technical university of moldova\\desktop\\mrstw\\proiect_mrstw\\handmadeshop\\handmadeshop.businesslogic\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1984CC5A-F9DF-4F3E-91A6-4860B7EC4ACE}|handmadeShop.BusinessLogic\\handmadeShop.BusinessLogic.csproj|solutionrelative:handmadeshop.businesslogic\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1984CC5A-F9DF-4F3E-91A6-4860B7EC4ACE}|handmadeShop.BusinessLogic\\handmadeShop.BusinessLogic.csproj|c:\\proiect_mrsutw\\proiect_mrstw\\handmadeshop\\handmadeshop.businesslogic\\interfaces\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1984CC5A-F9DF-4F3E-91A6-4860B7EC4ACE}|handmadeShop.BusinessLogic\\handmadeShop.BusinessLogic.csproj|solutionrelative:handmadeshop.businesslogic\\interfaces\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "C:\\Users\\MihaiJosan\\OneDrive - Technical University of Moldova\\Desktop\\MRSTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.BusinessLogic\\Services\\OrderService.cs",
-              "RelativeDocumentMoniker": "handmadeShop.BusinessLogic\\Services\\OrderService.cs",
-              "ToolTip": "C:\\Users\\MihaiJosan\\OneDrive - Technical University of Moldova\\Desktop\\MRSTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.BusinessLogic\\Services\\OrderService.cs",
-              "RelativeToolTip": "handmadeShop.BusinessLogic\\Services\\OrderService.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAAAEAAAAAkAAAA",
+              "Title": "IUserServices.cs",
+              "DocumentMoniker": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.BusinessLogic\\Interfaces\\IUserServices.cs",
+              "RelativeDocumentMoniker": "handmadeShop.BusinessLogic\\Interfaces\\IUserServices.cs",
+              "ToolTip": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.BusinessLogic\\Interfaces\\IUserServices.cs",
+              "RelativeToolTip": "handmadeShop.BusinessLogic\\Interfaces\\IUserServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T05:43:55.37Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EditProductService.cs",
-              "DocumentMoniker": "C:\\Users\\MihaiJosan\\OneDrive - Technical University of Moldova\\Desktop\\MRSTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.BusinessLogic\\Services\\EditProductService.cs",
-              "RelativeDocumentMoniker": "handmadeShop.BusinessLogic\\Services\\EditProductService.cs",
-              "ToolTip": "C:\\Users\\MihaiJosan\\OneDrive - Technical University of Moldova\\Desktop\\MRSTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.BusinessLogic\\Services\\EditProductService.cs",
-              "RelativeToolTip": "handmadeShop.BusinessLogic\\Services\\EditProductService.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAmwB4AAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T05:43:25.155Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CartService.cs",
-              "DocumentMoniker": "C:\\Users\\MihaiJosan\\OneDrive - Technical University of Moldova\\Desktop\\MRSTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.BusinessLogic\\Services\\CartService.cs",
-              "RelativeDocumentMoniker": "handmadeShop.BusinessLogic\\Services\\CartService.cs",
-              "ToolTip": "C:\\Users\\MihaiJosan\\OneDrive - Technical University of Moldova\\Desktop\\MRSTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.BusinessLogic\\Services\\CartService.cs",
-              "RelativeToolTip": "handmadeShop.BusinessLogic\\Services\\CartService.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAmwGYAAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T05:42:21.393Z",
+              "WhenOpened": "2024-05-30T07:18:59.643Z",
               "EditorCaption": ""
             }
           ]
