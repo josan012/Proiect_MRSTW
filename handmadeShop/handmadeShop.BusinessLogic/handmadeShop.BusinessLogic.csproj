@@ -142,6 +142,8 @@
     <Compile Include="Interfaces\ICartService.cs" />
     <Compile Include="Interfaces\IEditProductService.cs" />
     <Compile Include="Interfaces\IOrderService.cs" />
+    <Compile Include="Interfaces\IReservationService.cs" />
+    <Compile Include="Interfaces\IServiceCreator.cs" />
     <Compile Include="Interfaces\IUserServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CartService.cs" />
