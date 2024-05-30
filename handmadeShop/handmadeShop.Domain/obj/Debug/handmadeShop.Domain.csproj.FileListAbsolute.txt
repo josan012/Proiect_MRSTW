@@ -116,3 +116,6 @@ C:\Users\MihaiJosan\OneDrive - Technical University of Moldova\Desktop\MRSTW\Pro
 C:\Users\MihaiJosan\OneDrive - Technical University of Moldova\Desktop\MRSTW\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmade.18C8B75A.Up2Date
 C:\Users\MihaiJosan\OneDrive - Technical University of Moldova\Desktop\MRSTW\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmadeShop.Domain.dll
 C:\Users\MihaiJosan\OneDrive - Technical University of Moldova\Desktop\MRSTW\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmadeShop.Domain.pdb
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmadeShop.Domain.Migrations.InitialModel.resources
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmadeShop.Domain.csproj.GenerateResource.cache
+C:\Proiect_MRSUTW\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmadeShop.Domain.Migrations.AddProducts.resources
