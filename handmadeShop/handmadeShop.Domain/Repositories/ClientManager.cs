@@ -43,9 +43,6 @@ namespace handmadeShop.Domain.Repositories
                 {
                     existingItem.Address = item.Address;
                 }
-
-                // Optionally, you can add more checks for other properties
-
                 DataBase.Entry(existingItem).State = EntityState.Modified;
                 DataBase.SaveChanges();
             }
