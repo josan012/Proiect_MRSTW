@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1984CC5A-F9DF-4F3E-91A6-4860B7EC4ACE}|handmadeShop.BusinessLogic\\handmadeShop.BusinessLogic.csproj|c:\\proiect_mrsutw\\proiect_mrstw\\handmadeshop\\handmadeshop.businesslogic\\businessmodels\\customvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1984CC5A-F9DF-4F3E-91A6-4860B7EC4ACE}|handmadeShop.BusinessLogic\\handmadeShop.BusinessLogic.csproj|solutionrelative:handmadeshop.businesslogic\\businessmodels\\customvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomValidator.cs",
+              "DocumentMoniker": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.BusinessLogic\\BusinessModels\\CustomValidator.cs",
+              "RelativeDocumentMoniker": "handmadeShop.BusinessLogic\\BusinessModels\\CustomValidator.cs",
+              "ToolTip": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.BusinessLogic\\BusinessModels\\CustomValidator.cs",
+              "RelativeToolTip": "handmadeShop.BusinessLogic\\BusinessModels\\CustomValidator.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T04:42:02.889Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
