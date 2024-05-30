@@ -107,7 +107,7 @@ namespace handmadeShop.BusinessLogic.Services
           {
                if (id == null) throw new ValidationException("The ID was not found!", "");
                var product = DataBase.Products.Get(id.Value, category);
-               if (product == null) throw new ValidationException("The Coffee was not found", "");
+               if (product == null) throw new ValidationException("The Product was not found", "");
 
                return new ProductDTO { Id = product.Id, Name = product.Name, Price = product.Price, Category = category, PathImage = product.PathImage };
           }
