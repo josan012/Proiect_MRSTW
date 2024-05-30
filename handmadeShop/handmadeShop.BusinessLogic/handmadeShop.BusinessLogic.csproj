@@ -149,6 +149,8 @@
     <Compile Include="Services\CartService.cs" />
     <Compile Include="Services\EditProductService.cs" />
     <Compile Include="Services\OrderService.cs" />
+    <Compile Include="Services\ReservationService.cs" />
+    <Compile Include="Services\ServiceCreator.cs" />
     <Compile Include="Services\UserService.cs" />
   </ItemGroup>
   <ItemGroup />
