@@ -1,9 +1,14 @@
-﻿/*using Microsoft.AspNet.Identity;
-using System;
+﻿using handmadeShop.BusinessLogic.BusinessModels;
+using handmadeShop.BusinessLogic.DTO;
+using handmadeShop.BusinessLogic.Infrastructure;
+using handmadeShop.BusinessLogic.Interfaces;
+using handmadeShop.Domain.Entities;
+using handmadeShop.Domain.Interfaces;
+using Microsoft.AspNet.Identity;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Security.Claims;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace handmadeShop.BusinessLogic.Services
@@ -50,7 +55,7 @@ namespace handmadeShop.BusinessLogic.Services
         }
         public async Task<OperationDetails> Create(UserDTO userDTO)
         {
-            *//*Database.UserManager.PasswordValidator = new CustomPasswordValidator(4);*//*
+            Database.UserManager.PasswordValidator = new CustomPasswordValidator(4);
             ApplicationUser user = await Database.UserManager.FindByEmailAsync(userDTO.Email);
             if (user == null)
             {
@@ -220,4 +225,3 @@ namespace handmadeShop.BusinessLogic.Services
 
     }
 }
-*/
