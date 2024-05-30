@@ -174,7 +174,7 @@ C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\han
 C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmadeShop.Domain.csproj.AssemblyReference.cache
-C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmadeShop.Domain.Migrations.InitialModel.resources
+C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmadeShop.Domain.Migrations.InitialMigration.resources
 C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmadeShop.Domain.Migrations.AddProducts.resources
 C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmadeShop.Domain.csproj.GenerateResource.cache
 C:\Users\drogo\OneDrive\Документы\GitHub\Proiect_MRSTW\handmadeShop\handmadeShop.Domain\obj\Debug\handmadeShop.Domain.csproj.CoreCompileInputs.cache

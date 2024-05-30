@@ -38,12 +38,17 @@ namespace handmadeShop.Web.Controllers
                 return HttpContext.GetOwinContext().Authentication;
             }
         }
-        public AccountController(IOrderService orderService, ICartService cartService, IEditProductService editProductService, IReservationService reservationService)
+        //public AccountController(IOrderService orderService, ICartService cartService, IEditProductService editProductService, IReservationService reservationService)
+        //{
+        //    this.orderService = orderService;
+        //    this.cartService = cartService;
+        //    this.editProductService = editProductService;
+        //    this.reservationService = reservationService;
+        //}
+
+        public AccountController()
         {
-            this.orderService = orderService;
-            this.cartService = cartService;
-            this.editProductService = editProductService;
-            this.reservationService = reservationService;
+
         }
 
         [HttpGet]
@@ -118,7 +123,6 @@ namespace handmadeShop.Web.Controllers
             }
             if (ModelState.IsValid)
             {
-                // Update the properties only if the model properties are not empty
                 if (!string.IsNullOrEmpty(model.Email))
                 {
                     user.Email = model.Email;
@@ -334,7 +338,6 @@ namespace handmadeShop.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Login(LoginModel model)
         {
-            /*await SetInitialDataAsync();*/
             if (ModelState.IsValid)
             {
                 UserDTO userDTO = new UserDTO { UserName = model.UserName, Password = model.Password };
@@ -383,7 +386,6 @@ namespace handmadeShop.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterModel model)
         {
-            /* await SetInitialDataAsync();*/
             if (ModelState.IsValid)
             {
                 UserDTO userDto = new UserDTO
@@ -441,13 +443,18 @@ namespace handmadeShop.Web.Controllers
             return RedirectToAction("DiscountPage", "Account");
         }
 
+        //protected override void Dispose(bool disposing)
+        //{
+        //    UserService.Dispose();
+        //    cartService.Dispose();
+        //    orderService.Dispose();
+        //    editProductService.Dispose();
+        //    reservationService.Dispose();
+        //    base.Dispose(disposing);
+        //}
+
         protected override void Dispose(bool disposing)
         {
-            UserService.Dispose();
-            cartService.Dispose();
-            orderService.Dispose();
-            editProductService.Dispose();
-            reservationService.Dispose();
             base.Dispose(disposing);
         }
 
@@ -516,9 +523,9 @@ namespace handmadeShop.Web.Controllers
         {
             return new UserDTO
             {
-                Email = "mihai@gmail.com",
-                UserName = "King123",
-                Password = "King123",
+                Email = "drogomanKatalin@gmail.com",
+                UserName = "Catalin",
+                Password = "Catalin",
                 Name = "Application Admin",
                 Address = "New York Street 34",
                 Role = "admin",

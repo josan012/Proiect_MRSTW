@@ -1,0 +1,66 @@
+﻿/* Custom CSS for adjusting form width */
+.custom-form {
+    max-width: 480px; /* Adjust the max-width as needed */
+    margin: 10px auto; /* Center the form horizontally and leave space for the navbar */
+}
+
+    .custom-form h4 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .custom-form hr {
+        border-color: #ddd;
+    }
+
+    .custom-form .form-group {
+        margin-bottom: 25px;
+    }
+
+    .custom-form label {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .custom-form input[type="text"],
+    .custom-form input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+.btn-primary {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+    .custom-form .text-danger {
+        color: #dc3545;
+    }
+
+    .custom-form .btn-register {
+        margin-top: 10px;
+
+    }
+
+
+#loginForm {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    /*z-index: 10000;*/ /* Ensure the form appears above other content */
+    position: relative;
+
+}
