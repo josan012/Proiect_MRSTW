@@ -1,4 +1,5 @@
-﻿using handmadeShop.BusinessLogic.DTO;
+﻿using AutoMapper;
+using handmadeShop.BusinessLogic.DTO;
 using handmadeShop.BusinessLogic.Interfaces;
 using handmadeShop.Domain.Entities;
 using handmadeShop.Domain.Interfaces;
@@ -20,7 +21,7 @@ namespace handmadeShop.BusinessLogic.Services
         }
         public void DeleteReservation(int reservationId)
         {
-            throw new NotImplementedException();
+            Database.ReservationsRepository.Delete(reservationId, null);
         }
 
         public void Dispose()
@@ -30,17 +31,41 @@ namespace handmadeShop.BusinessLogic.Services
 
         public ReservationTableDTO GetReservation(int id)
         {
-            throw new NotImplementedException();
+            var reservationTable = Database.ReservationsRepository.Get(id, null);
+            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<ReservationTableDTO, ReservationTable>()).CreateMapper();
+            var reservation = mapper.Map<ReservationTable, ReservationTableDTO>(reservationTable);
+            return reservation;
         }
 
         public IEnumerable<ReservationTableDTO> GetReservations()
         {
-            throw new NotImplementedException();
+            var reservations = Database.ReservationsRepository.GetAll(null);
+            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<ReservationTableDTO, ReservationTable>()).CreateMapper();
+            var reservationsDTO = mapper.Map<IEnumerable<ReservationTable>, List<ReservationTableDTO>>(reservations);
+            return reservationsDTO;
         }
 
         public IEnumerable<ReservationTableDTO> GetReservationsByUserId(string userId)
         {
-            throw new NotImplementedException();
+            var reservations = Database.ReservationsRepository.GetByUserId(userId);
+            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<ReservationTableDTO, ReservationTable>()).CreateMapper();
+            List<ReservationTableDTO> reservationsDTO = new List<ReservationTableDTO>();
+            foreach (var reservation in reservations)
+            {
+                var reservationDto = new ReservationTableDTO
+                {
+                    ReservationDate = reservation.ReservationDate,
+                    ReservationTime = reservation.ReservationTime,
+                    PhoneNumber = reservation.PhoneNumber,
+                    Message = reservation.Message,
+                    ApplicationUser = reservation.ApplicationUser,
+                    Id = reservation.Id,
+                    FirstName = reservation.FirstName,
+                    LastName = reservation.LastName,
+                };
+                reservationsDTO.Add(reservationDto);
+            }
+            return reservationsDTO;
         }
 
         public void MakeReservation(ReservationTableDTO reservationDTO)
