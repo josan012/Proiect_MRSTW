@@ -1,7 +1,10 @@
 
 /handmadeShop/.vs/handmadeShop/FileContentIndex
 /handmadeShop/.vs
+<<<<<<< HEAD
 handmadeShop/packages/
 handmadeShop/handmadeShop.Web/Views/SharedBacup/
 handmadeShop/handmadeShop.Web/VendorBackup/
 handmadeShop/handmadeShop.Domain/.vs/
+=======
+>>>>>>> main
