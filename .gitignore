@@ -5,3 +5,7 @@ handmadeShop/packages/
 handmadeShop/handmadeShop.Web/Views/SharedBacup/
 handmadeShop/handmadeShop.Web/VendorBackup/
 handmadeShop/handmadeShop.Domain/.vs/
+handmadeShop/handmadeShop.Domain/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+handmadeShop/handmadeShop.Domain/obj/Debug/handmadeShop.Domain.csproj.AssemblyReference.cache
+handmadeShop/handmadeShop.Web/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+handmadeShop/handmadeShop.Web/obj/
