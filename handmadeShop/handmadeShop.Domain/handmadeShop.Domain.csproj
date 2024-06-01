@@ -143,13 +143,13 @@
     <Compile Include="Interfaces\IClientManager.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
-    <Compile Include="Migrations\202405301322173_InitialModel.cs" />
-    <Compile Include="Migrations\202405301322173_InitialModel.Designer.cs">
-      <DependentUpon>202405301322173_InitialModel.cs</DependentUpon>
+    <Compile Include="Migrations\202405302008390_InitialMigration.cs" />
+    <Compile Include="Migrations\202405302008390_InitialMigration.designer.cs">
+      <DependentUpon>202405302008390_InitialMigration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202405301329402_AddProducts.cs" />
-    <Compile Include="Migrations\202405301329402_AddProducts.Designer.cs">
-      <DependentUpon>202405301329402_AddProducts.cs</DependentUpon>
+    <Compile Include="Migrations\202405302009439_AddProducts.cs" />
+    <Compile Include="Migrations\202405302009439_AddProducts.designer.cs">
+      <DependentUpon>202405302009439_AddProducts.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -162,14 +162,6 @@
     <Compile Include="Repositories\ReservationRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202405301322173_InitialModel.resx">
-      <DependentUpon>202405301322173_InitialModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202405301329402_AddProducts.resx">
-      <DependentUpon>202405301329402_AddProducts.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
@@ -179,6 +171,14 @@
     <Content Include="Scripts\jquery-1.8.0.min.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202405302008390_InitialMigration.resx">
+      <DependentUpon>202405302008390_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405302009439_AddProducts.resx">
+      <DependentUpon>202405302009439_AddProducts.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
