@@ -22,7 +22,7 @@ namespace handmadeShop.BusinessLogic.Services
 
           public void AddToCart(int ProductId, string category)
           {
-               var products = DataBase.Products.Get(ProductId, category);
+               var products = DataBase.Products.GetProduct(ProductId);// Get(ProductId, category);
                var mapper = new MapperConfiguration(cfg => cfg.CreateMap<Product, ProductDTO>()).CreateMapper();
                var product = mapper.Map<Product, ProductDTO>(products);
 
@@ -54,6 +54,7 @@ namespace handmadeShop.BusinessLogic.Services
           {
                for (int i = 0; i < cart.Count; i++)
                {
+                Console.WriteLine($"Product Id: {ProductId} Item: {cart[i]}");
                     if (cart[i].Product.Id == ProductId)
                     {
                          return i;

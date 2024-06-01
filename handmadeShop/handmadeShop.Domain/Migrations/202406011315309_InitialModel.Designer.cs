@@ -7,13 +7,13 @@ namespace handmadeShop.Domain.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class AddProducts : IMigrationMetadata
+    public sealed partial class InitialModel : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddProducts));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialModel));
         
         string IMigrationMetadata.Id
         {
-            get { return "202405302009439_AddProducts"; }
+            get { return "202406011315309_InitialModel"; }
         }
         
         string IMigrationMetadata.Source

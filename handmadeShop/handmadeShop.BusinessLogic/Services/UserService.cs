@@ -64,7 +64,7 @@ namespace handmadeShop.BusinessLogic.Services
 
                 if (result.Errors.Count() > 0) return new OperationDetails(false, result.Errors.FirstOrDefault(), "");
                 //Adauga roluri
-                await Database.UserManager.AddToRoleAsync(user.Id, userDTO.Role);
+                await Database.UserManager.AddToRoleAsync(user.Id, "user");
                 //Creaza profilul utilizatorului
                 ClientProfile clientProfile = new ClientProfile { Id = user.Id, Address = userDTO.Address, Name = userDTO.Name };
                 Database.ClientManager.Create(clientProfile);
