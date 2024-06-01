@@ -1,0 +1,196 @@
+﻿@model handmadeShop.Web.Models.OrderViewModel
+
+@{
+    ViewBag.Title = "Checkout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["RenderNavbar"] = true;
+}
+
+<section class="home-slider owl-carousel">
+
+    <div class="slider-item" style="background-image: url(/Content/images/bg_3.jpg);" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row slider-text justify-content-center align-items-center">
+
+                <div class="col-md-7 col-sm-12 text-center ftco-animate">
+                    <h1 class="mb-3 mt-5 bread">Checkout</h1>
+                    <p class="breadcrumbs"><span class="mr-2">@Html.ActionLink("Home", "Index", "Home")</span> <span>Checout</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 ftco-animate">
+                @using (Html.BeginForm("Checkout", "Buy", FormMethod.Post, new { @class = "billing-form ftco-bg-dark p-3 p-md-5" }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true)
+
+                    <h3 class="mb-4 billing-heading">Billing Details</h3>
+                    <div class="row align-items-end">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.FirstName)
+                                @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.LastName)
+                                @Html.TextBoxFor(model => model.LastName, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.PhoneNumber)
+                                @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+
+                                @Html.LabelFor(model => model.Email)
+                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Address)
+                                @Html.TextBoxFor(model => model.Address, new { @class = "form-control", placeholder = "House number and street name" })
+                                @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Appartment)
+                                @Html.TextBoxFor(model => model.Appartment, new { @class = "form-control", placeholder = "Apartment, suite, unit etc: (optional)" })
+                                @Html.ValidationMessageFor(model => model.Appartment, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.City)
+                                @Html.TextBoxFor(model => model.City, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.PostCode)
+                                @Html.TextBoxFor(model => model.PostCode, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.PostCode, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        @*    <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.State)
+                        @Html.DropDownListFor(model => model.State, new SelectList(new[] { "France", "Italy", "Philippines", "South Korea", "Hongkong", "Japan" }), "Select a country", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.State, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                        *@
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary py-3 px-4">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+
+                @if (ViewBag.Products == null )
+                {
+                    <div class="alert alert-warning" role="alert">
+                        Your cart is empty. Please add items to your cart before proceeding to checkout.
+                    </div>
+                }
+
+                <div class="row mt-5 pt-3 d-flex">
+                    <div class="col-md-6 d-flex">
+                        <div class="cart-detail cart-total ftco-bg-dark p-3 p-md-4">
+                            <h3 class="billing-heading mb-4">Cart Total</h3>
+                            <p class="d-flex">
+                                <span>Subtotal</span>
+                                <span id="subtotal"></span>
+                            </p>
+                            <p class="d-flex">
+                                <span>Delivery</span>
+                                <span id="delivery"></span>
+                            </p>
+                            <p class="d-flex">
+                                <span>Discount</span>
+                                <span id="discount"></span>
+                            </p>
+                            <hr>
+                            <p class="d-flex total-price">
+                                <span>Total</span>
+                                <span id="finalTotal"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="cart-detail ftco-bg-dark p-3 p-md-4">
+                            <h3 class="billing-heading mb-4">Payment Method</h3>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" class="mr-2"> Direct Bank Tranfer</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" class="mr-2"> Check Payment</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" class="mr-2"> Paypal</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" class="mr-2"> I have read and accept the terms and conditions</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p><a href="#" class="btn btn-primary py-3 px-4">Place an order</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .col-md-8 -->
+
+
+            <div class="sidebar-box ftco-animate">
+                <h3>Tag Cloud</h3>
+                <div class="tagcloud">
+                    <a style="cursor:pointer" class="tag-cloud-link">Haine Nationale</a>
+                    <a style="cursor:pointer" class="tag-cloud-link">Jucarii</a>
+                    <a style="cursor:pointer" class="tag-cloud-link">Gentute</a>
+                    <a style="cursor:pointer" class="tag-cloud-link">Articole pentru Copii</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</section> <!-- .section -->

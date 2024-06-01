@@ -5,3 +5,16 @@ handmadeShop/packages/
 handmadeShop/handmadeShop.Web/Views/SharedBacup/
 handmadeShop/handmadeShop.Web/VendorBackup/
 handmadeShop/handmadeShop.Domain/.vs/
+handmadeShop/handmadeShop.Domain/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+handmadeShop/handmadeShop.Domain/obj/Debug/handmadeShop.Domain.csproj.AssemblyReference.cache
+handmadeShop/handmadeShop.Web/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+handmadeShop/handmadeShop.Web/obj/
+handmadeShop/handmadeShop.Webb/bin/
+handmadeShop/handmadeShop.Webb/Content/
+handmadeShop/handmadeShop.Webb/obj/
+handmadeShop/handmadeShop.sln
+handmadeShop/handmadeShop.BusinessLogic/bin/
+handmadeShop/handmadeShop.BusinessLogic/obj/
+handmadeShop/handmadeShop.Domain/bin/
+handmadeShop/handmadeShop.Domain/obj/
+handmadeShop/handmadeShop.Web/.vs/
