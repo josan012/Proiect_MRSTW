@@ -17,6 +17,7 @@ using System.Web.Mvc;
 using System.Web.UI.WebControls;
 using handmadeShop.BusinessLogic.BusinessModels;
 using handmadeShop.Web.Models;
+using System.IO;
 
 namespace handmadeShop.Web.Controllers
 {
@@ -25,7 +26,7 @@ namespace handmadeShop.Web.Controllers
     {
         private IOrderService orderService;
         private ICartService cartService;
-        private IEditProductService editProductService;
+        private IManageProducts manageProduts;
         private IReservationService reservationService;
         private IUserService UserService
         {
@@ -41,11 +42,11 @@ namespace handmadeShop.Web.Controllers
                 return HttpContext.GetOwinContext().Authentication;
             }
         }
-        public AccountController(IOrderService orderService, ICartService cartService, IEditProductService editProductService, IReservationService reservationService)
+        public AccountController(IOrderService orderService, ICartService cartService, IManageProducts manageProductService, IReservationService reservationService)
         {
             this.orderService = orderService;
             this.cartService = cartService;
-            this.editProductService = editProductService;
+            this.manageProduts = manageProductService;
             this.reservationService = reservationService;
         }
 
@@ -217,7 +218,12 @@ namespace handmadeShop.Web.Controllers
            
             if (ModelState.IsValid)
             {
-               
+                string path = SaveImage("ImageFile");
+                if (!string.IsNullOrEmpty(path))
+                {
+                    model.PathImage = path;
+                }
+
                 var ProductDTO = new ProductDTO
                 {
                     Id = model.Id,
@@ -227,12 +233,24 @@ namespace handmadeShop.Web.Controllers
                     PathImage = model.PathImage,
               
                 };
-                editProductService.UpdateProduct(ProductDTO);
-                return RedirectToAction("AdminDashboard");
+                manageProduts.UpdateProduct(ProductDTO);
+                return RedirectToAction("ViewAllProducts");
             }
            
             return View(model);
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
+        public ActionResult DeleteProduct(int productId)
+        {
+           
+            manageProduts.DeleteProduct(productId);
+
+            return RedirectToAction("ViewAllProducts");
+        }
+
+
         [HttpGet]
         [Authorize(Roles ="admin")]
         public ActionResult DiscountPage()
@@ -332,7 +350,7 @@ namespace handmadeShop.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Login(LoginModel model)
         {
-            //await SetInitialDataAsync();
+            
             if (ModelState.IsValid)
             {
                 UserDTO userDTO = new UserDTO { UserName = model.UserName,Password = model.Password };
@@ -347,7 +365,7 @@ namespace handmadeShop.Web.Controllers
 
                     if (userRole == "admin")
                     {
-                        Session["UserId"] = "admin";
+                        
                         AuthenticationManager.SignOut();
                         AuthenticationManager.SignIn(new AuthenticationProperties { IsPersistent = true }, claim);
                         return RedirectToAction("AdminDashboard");
@@ -355,7 +373,7 @@ namespace handmadeShop.Web.Controllers
                     }
                     else
                     {
-                        Session["UserId"] = "user";
+                     
                         AuthenticationManager.SignOut();
                         AuthenticationManager.SignIn(new AuthenticationProperties { IsPersistent = true }, claim);
                         return RedirectToAction("ClientProfile", "Account");
@@ -381,7 +399,7 @@ namespace handmadeShop.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterModel model)
         {
-           /* await SetInitialDataAsync();*/
+            await SetInitialDataAsync();
             if (ModelState.IsValid)
             {
                 UserDTO userDto = new UserDTO
@@ -400,7 +418,33 @@ namespace handmadeShop.Web.Controllers
             return View(model);
         }
 
-      
+        [Authorize(Roles = "admin")]
+        public ActionResult AddProduct()
+        {
+
+            return View();
+        }
+        [HttpPost]
+        public ActionResult AddProduct(ProductModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                model.PathImage = SaveImage("PathImage");
+
+                var productDTO = new ProductDTO
+                {
+                    
+                    Category = model.Category,
+                    Name = model.Name,
+                    Price = model.Price,
+                    PathImage = model.PathImage,
+
+                };
+                manageProduts.AddProduct(productDTO);
+                return RedirectToAction("ViewAllProducts");
+            }
+            return View(model);
+        }
 
         [Authorize(Roles = "admin")]
         [HttpPost]
@@ -444,7 +488,7 @@ namespace handmadeShop.Web.Controllers
             UserService.Dispose();
             cartService.Dispose();
             orderService.Dispose();
-            editProductService.Dispose();
+            manageProduts.Dispose();
             reservationService.Dispose();   
             base.Dispose(disposing);
         }
@@ -515,8 +559,8 @@ namespace handmadeShop.Web.Controllers
             return new UserDTO
             {
                 Email = "drogomankatalin@gmail.com",
-                UserName = "Catalin",
-                Password = "1234",
+                UserName = "Admin",
+                Password = "123456",
                 Name = "Application Admin",
                 Address = "Studentilor 9/11",
                 Role = "admin",
@@ -547,6 +591,7 @@ namespace handmadeShop.Web.Controllers
             UserDTO adminUser = GetAdminInfo();
             await UserService.SetInitialData(adminUser, new List<string> { "user", "admin" });
         }
+
         private async Task<UserDTO> GetUserAdmin()
         {
             var userId = User.Identity.GetUserId();
@@ -564,9 +609,21 @@ namespace handmadeShop.Web.Controllers
                 Address = user.Address
             };
         }
-    
 
-      
+
+        private string SaveImage(string name)
+        {
+            var file = Request.Files[name];
+            if (file != null && file.ContentLength > 0)
+            {
+                string fileName = Path.GetFileName(file.FileName);
+                string path = Path.Combine(Server.MapPath("~/Content/images"), fileName);
+                file.SaveAs(path);
+
+                return "/Content/images/" + fileName;
+            }
+            return string.Empty;
+        }
 
         private async Task<IEnumerable<UserModel>> GetAllUsers()
         {

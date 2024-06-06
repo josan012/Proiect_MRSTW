@@ -140,14 +140,14 @@
     <Compile Include="Infrastructure\ServiceModule.cs" />
     <Compile Include="Infrastructure\ValidationException.cs" />
     <Compile Include="Interfaces\ICartService.cs" />
-    <Compile Include="Interfaces\IEditProductService.cs" />
+    <Compile Include="Interfaces\IManageProducts.cs" />
     <Compile Include="Interfaces\IOrderService.cs" />
     <Compile Include="Interfaces\IReservationService.cs" />
     <Compile Include="Interfaces\IServiceCreator.cs" />
     <Compile Include="Interfaces\IUserServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CartService.cs" />
-    <Compile Include="Services\EditProductService.cs" />
+    <Compile Include="Services\ManageProductService.cs" />
     <Compile Include="Services\OrderService.cs" />
     <Compile Include="Services\ReservationService.cs" />
     <Compile Include="Services\ServiceCreator.cs" />

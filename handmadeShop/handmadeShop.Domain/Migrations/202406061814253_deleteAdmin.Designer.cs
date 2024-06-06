@@ -7,13 +7,13 @@ namespace handmadeShop.Domain.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class InitialModel : IMigrationMetadata
+    public sealed partial class deleteAdmin : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialModel));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(deleteAdmin));
         
         string IMigrationMetadata.Id
         {
-            get { return "202406011315309_InitialModel"; }
+            get { return "202406061814253_deleteAdmin"; }
         }
         
         string IMigrationMetadata.Source

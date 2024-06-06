@@ -143,13 +143,9 @@
     <Compile Include="Interfaces\IClientManager.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
-    <Compile Include="Migrations\202406011315309_InitialModel.cs" />
-    <Compile Include="Migrations\202406011315309_InitialModel.designer.cs">
-      <DependentUpon>202406011315309_InitialModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202406011320558_AddProducts.cs" />
-    <Compile Include="Migrations\202406011320558_AddProducts.designer.cs">
-      <DependentUpon>202406011320558_AddProducts.cs</DependentUpon>
+    <Compile Include="Migrations\202406061814253_deleteAdmin.cs" />
+    <Compile Include="Migrations\202406061814253_deleteAdmin.Designer.cs">
+      <DependentUpon>202406061814253_deleteAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -173,11 +169,8 @@
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202406011315309_InitialModel.resx">
-      <DependentUpon>202406011315309_InitialModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202406011320558_AddProducts.resx">
-      <DependentUpon>202406011320558_AddProducts.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202406061814253_deleteAdmin.resx">
+      <DependentUpon>202406061814253_deleteAdmin.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

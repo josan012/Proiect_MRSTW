@@ -23,10 +23,10 @@ namespace handmadeShop.Web
 
             NinjectModule orderModule = new OrderModule();
             NinjectModule reservationModule = new ReservationModule();
-            NinjectModule editModule = new EditModule();
+            NinjectModule manageModule = new ManageProductModule();
             NinjectModule serviceModule = new ServiceModule("Connection");
             NinjectModule cartModule = new CartModule();    
-            var kernel = new StandardKernel(serviceModule,cartModule,orderModule,editModule,reservationModule);
+            var kernel = new StandardKernel(serviceModule,cartModule,orderModule,manageModule,reservationModule);
             DependencyResolver.SetResolver(new NinjectDependencyResolver(kernel));
 
 
