@@ -17,9 +17,30 @@
                     <h6>@item.Name</h6>
                     <img src="@item.PathImage" alt="@item.Name" style="width: 200px;">
                     <p>Price: $@item.Price</p>
-                    @Html.ActionLink("Edit Product", "EditExistingProduct", new { Id = item.Id,category=item.Category }, new { @class = "btn btn-primary btn-outline-primary" })
+                    @Html.ActionLink("Edit Product", "EditExistingProduct", new { Id = item.Id, category = item.Category }, new { @class = "btn btn-primary btn-outline-primary" })
+                    @using (Html.BeginForm("DeleteProduct", "Account", new { productId = item.Id }, FormMethod.Post, new { @class = "removeProductForm-" + item.Id }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="BookId" value="@item.Id" />
+                        <p class="btn btn-danger" onclick="confirmDelete('@item.Id')">Delete</p>
+                    }
+
                 </div>
             </div>
         }
     </div>
 </div>
+
+
+<script>
+    function confirmDelete(productId) {
+        if (confirm("Are you sure you want to remove this book?")) {
+            var form = document.querySelector(".removeProductForm-" + productId);
+            if (form) {
+                form.submit();
+            } else {
+                console.error("Form not found for user ID:", productId);
+            }
+        }
+    }
+</script>

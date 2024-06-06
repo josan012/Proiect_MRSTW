@@ -17,7 +17,7 @@ namespace handmadeShop.Domain.Repositories
           }
           public void Create(Product item, string category)
           {
-               db.Products.Where(c => c.Category == category).ToList().Add(item);
+               db.Products.Add(item);
           }
 
           public void Delete(int id, string category)

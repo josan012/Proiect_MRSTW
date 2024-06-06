@@ -55,7 +55,6 @@ namespace handmadeShop.BusinessLogic.Services
         }
         public async Task<OperationDetails> Create(UserDTO userDTO)
         {
-            Database.UserManager.PasswordValidator = new CustomPasswordValidator(4);
             ApplicationUser user = await Database.UserManager.FindByEmailAsync(userDTO.Email);
             if (user == null)
             {
@@ -64,7 +63,7 @@ namespace handmadeShop.BusinessLogic.Services
 
                 if (result.Errors.Count() > 0) return new OperationDetails(false, result.Errors.FirstOrDefault(), "");
                 //Adauga roluri
-                await Database.UserManager.AddToRoleAsync(user.Id, "user");
+                await Database.UserManager.AddToRoleAsync(user.Id, userDTO.Role);
                 //Creaza profilul utilizatorului
                 ClientProfile clientProfile = new ClientProfile { Id = user.Id, Address = userDTO.Address, Name = userDTO.Name };
                 Database.ClientManager.Create(clientProfile);
@@ -75,7 +74,6 @@ namespace handmadeShop.BusinessLogic.Services
             {
                 return new OperationDetails(false, "User with this login already exists", "Email");
             }
-
         }
         public async Task<IEnumerable<UserDTO>> GetAllUsers()
         {
@@ -108,7 +106,6 @@ namespace handmadeShop.BusinessLogic.Services
                 }
             }
             await Create(adminDto);
-
         }
         public async Task<OperationDetails> DeleteUserByUsername(string username)
         {
