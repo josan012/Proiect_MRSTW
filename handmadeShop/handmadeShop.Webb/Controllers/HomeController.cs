@@ -127,15 +127,18 @@ namespace handmadeShop.Web.Controllers
                 return mapper.Map<IEnumerable<ProductDTO>, List<ProductModel>>(productDTOs);
             }
 
-            var haineNationaleDTO = GetProducts("HaineNationale");
-            var jucariiDTO = GetProducts("Jucarii");
-            var gentuteDTO = GetProducts("Gentute");
-            var articoleCopiiDTO = GetProducts("ArticoleCopii");
+            var jucariiHandmadeDTO = GetProducts("Jucării handmade");
+            var paturiciHandmadeDTO = GetProducts("Păturică handmade");
+            var botoseiDTO = GetProducts("Botoșei");
+            var gentuteHandmadeDTO = GetProducts("Gentuțe handmade");
+            var bijuteriiHandmadeDTO = GetProducts("Bijuterii handmade");
 
-            ViewBag.HaineNationale = MapProducts(haineNationaleDTO);
-            ViewBag.Jucarii = MapProducts(jucariiDTO);
-            ViewBag.Gentute = MapProducts(gentuteDTO);
-            ViewBag.ArticoleCopii = MapProducts(articoleCopiiDTO);
+            ViewBag.JucariiHandmade = MapProducts(jucariiHandmadeDTO);
+            ViewBag.PaturiciHandmade = MapProducts(paturiciHandmadeDTO);
+            ViewBag.Botosei = MapProducts(botoseiDTO);
+            ViewBag.GentuteHandmade = MapProducts(gentuteHandmadeDTO);
+            ViewBag.BijuteriiHandmade = MapProducts(bijuteriiHandmadeDTO);
+
         }
 
     }
