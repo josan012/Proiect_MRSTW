@@ -55,91 +55,6 @@
     </div>
 </section>
 
-<section class="ftco-intro">
-    <div class="container-wrap">
-        <div class="wrap d-md-flex align-items-xl-end">
-            <div class="info">
-                <div class="row no-gutters">
-                    <div class="col-md-4 d-flex ftco-animate">
-                        <div class="icon"><span class="icon-phone"></span></div>
-                        <div class="text">
-                            <h3>000 (123) 456 7890</h3>
-                            <p>A small river named Duden flows by their place and supplies.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 d-flex ftco-animate">
-                        <div class="icon"><span class="icon-my_location"></span></div>
-                        <div class="text">
-                            <h3>198 West 21th Street</h3>
-                            <p>	203 Fake St. Mountain View, San Francisco, California, USA</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 d-flex ftco-animate">
-                        <div class="icon"><span class="icon-clock-o"></span></div>
-                        <div class="text">
-                            <h3>Open Monday-Friday</h3>
-                            <p>8:00am - 9:00pm</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--BOOK TABLE FORM -->
-
-            <div class="book p-4">
-                <h3>Book a Table</h3>
-                @using (Html.BeginForm("MakeReservation", "Home", FormMethod.Post, new { @class = "appointment-form" }))
-                {
-                    @Html.AntiForgeryToken()
-                    <div class="d-md-flex">
-                        <div class="form-group">
-                            @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control", placeholder = "First Name" })
-                        </div>
-                        <div class="form-group ml-md-4">
-                            @Html.TextBoxFor(model => model.LastName, new { @class = "form-control", placeholder = "Last Name" })
-                        </div>
-                    </div>
-                    <div class="d-md-flex">
-                        <div class="form-group">
-                            <div class="input-wrap">
-                                <div class="icon"><span class="ion-md-calendar"></span></div>
-                                @Html.TextBoxFor(model => model.ReservationDate, "{0:dd-MM-yyyy}", new { @class = "form-control", placeholder = "Reservation Date", onchange = "updateHiddenDate()", autocomplete = "off", id = "ReservationDateInput" })
-                                @Html.HiddenFor(model => model.ReservationDate, new { id = "HiddenReservationDate" })
-
-                                @Html.ValidationMessageFor(model => model.ReservationDate, "", new { @class = "text-danger" })
-                            </div>
-                        </div>
-                        <div class="form-group ml-md-4">
-                            <div class="input-wrap">
-                                <div class="icon"><span class="ion-md-clock"></span></div>
-                                @Html.TextBoxFor(model => model.ReservationTime, new { @class = "form-control appointment_time", placeholder = "Reservation Time", onchange = "captureTime()" })
-                                @Html.HiddenFor(model => model.ReservationTime, new { id = "HiddenReservationTime" })
-                                @Html.ValidationMessageFor(model => model.ReservationTime, "", new { @class = "text-danger" })
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-md-flex">
-                        <div class="form-group">
-                            @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control", placeholder = "Phone" })
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        @Html.TextAreaFor(model => model.Message, new { @class = "form-control", placeholder = "Message", cols = 30, rows = 2 })
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" value="Appointment" class="btn btn-white py-3 px-4">
-                    </div>
-                }
-            </div>
-
-
-
-
-        </div>
-
-
-    </div>
-</section>
-
 <section class="ftco-about d-md-flex">
     <div class="one-half img" style="background-image: url(/Content/images/about.jpg);"></div>
     <div class="one-half ftco-animate">
@@ -160,9 +75,6 @@
         <div class="row">
             <div class="col-md-4 ftco-animate">
                 <div class="media d-block text-center block-6 services">
-                    <div class="icon d-flex justify-content-center align-items-center mb-5">
-                        <span class="flaticon-choices"></span>
-                    </div>
                     <div class="media-body">
                         <h3 class="heading">Easy to Order</h3>
                         <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
@@ -171,9 +83,6 @@
             </div>
             <div class="col-md-4 ftco-animate">
                 <div class="media d-block text-center block-6 services">
-                    <div class="icon d-flex justify-content-center align-items-center mb-5">
-                        <span class="flaticon-delivery-truck"></span>
-                    </div>
                     <div class="media-body">
                         <h3 class="heading">Fastest Delivery</h3>
                         <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
@@ -182,185 +91,11 @@
             </div>
             <div class="col-md-4 ftco-animate">
                 <div class="media d-block text-center block-6 services">
-                    <div class="icon d-flex justify-content-center align-items-center mb-5">
-                        <span class="flaticon-coffee-bean"></span>
-                    </div>
                     <div class="media-body">
-                        <h3 class="heading">Quality Coffee</h3>
+                        <h3 class="heading">Quality Products</h3>
                         <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="ftco-section">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6 pr-md-5">
-                <div class="heading-section text-md-right ftco-animate">
-                    <span class="subheading">Discover</span>
-                    <h2 class="mb-4">Our Menu</h2>
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                    <p><a href="#" class="btn btn-primary btn-outline-primary px-4 py-3">View Full Menu</a></p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="menu-entry">
-                            <a href="#" class="img" style="background-image: url(/Content/images/menu-1.jpg);"></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="menu-entry mt-lg-4">
-                            <a href="#" class="img" style="background-image: url(/Content/images/menu-2.jpg);"></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="menu-entry">
-                            <a href="#" class="img" style="background-image: url(/Content/images/menu-3.jpg);"></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="menu-entry mt-lg-4">
-                            <a href="#" class="img" style="background-image: url(Content/images/menu-4.jpg);"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="ftco-counter ftco-bg-dark img" id="section-counter" style="background-image: url(/Content/images/bg_2.jpg);" data-stellar-background-ratio="0.5">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-10">
-                <div class="row">
-                    <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                        <div class="block-18 text-center">
-
-                            <div class="text">
-                                <div class="icon"><span class="flaticon-coffee-cup"></span></div>
-                                <strong class="number" data-number="100">0</strong>
-                                <span>Coffee Branches</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                        <div class="block-18 text-center">
-                            <div class="text">
-                                <div class="icon"><span class="flaticon-coffee-cup"></span></div>
-                                <strong class="number" data-number="85">0</strong>
-                                <span>Number of Awards</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                        <div class="block-18 text-center">
-                            <div class="text">
-                                <div class="icon"><span class="flaticon-coffee-cup"></span></div>
-                                <strong class="number" data-number="10567">0</strong>
-                                <span>Happy Customer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                        <div class="block-18 text-center">
-                            <div class="text">
-                                <div class="icon"><span class="flaticon-coffee-cup"></span></div>
-                                <strong class="number" data-number="900">0</strong>
-                                <span>Staff</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="ftco-section">
-    <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-            <div class="col-md-7 heading-section ftco-animate text-center">
-                <span class="subheading">Discover</span>
-                <h2 class="mb-4">Best Coffee Sellers</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-            </div>
-        </div>
-
-        <div class="row">
-            @foreach (var coffee in ViewBag.HaineNationale)
-            {
-                <div class="col-md-3">
-                    <div class="menu-entry">
-
-                        <a href="#" class="img" style="background-image: url(@coffee.PathImage);"></a>
-                        <div class="text text-center pt-4">
-                            <h3><a href="#">@coffee.Name</a></h3>
-                            <p>A small river named Duden flows by their place and supplies</p>
-                            <p class="price">
-                                <span>$@coffee.Price</span>
-
-                            </p>
-                            <form id="add-item-form" data-item-id="@coffee.Id" data-item-category="Coffee" action="@Url.Action("AddToCart", "Buy", new { ProductId = coffee.Id,category="HaineNationale" })" method="post">
-                                @Html.AntiForgeryToken()
-                                <button type="submit" class="btn btn-primary btn-outline-primary add-to-cart">Add To Cart</button>
-                            </form>
-                        </div>
-
-
-                    </div>
-                </div>
-            }
-            @if (!Request.IsAuthenticated)
-            {
-                <div>
-                    <div id="InfoContainer" class="alert alert-info alert-dismissible fade show" role="contentinfo" style="width:1100px">
-                        <strong>You have to be Logged In!</strong> Please Log In in order to buy our products.
-                        <button type="button" class="btn btn-primary btn-outline-primary" data-bs-dismiss="alert" aria-label="Close">Close</button>
-                    </div>
-                </div>
-            }
-        </div>
-
-    </div>
-</section>
-
-<section class="ftco-gallery">
-    <div class="container-wrap">
-        <div class="row no-gutters">
-            <div class="col-md-3 ftco-animate">
-                <a href="gallery.html" class="gallery img d-flex align-items-center" style="background-image: url(/Content/images/gallery-1.jpg);">
-                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                        <span class="icon-search"></span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3 ftco-animate">
-                <a href="gallery.html" class="gallery img d-flex align-items-center" style="background-image: url(/Content/images/gallery-2.jpg);">
-                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                        <span class="icon-search"></span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3 ftco-animate">
-                <a href="gallery.html" class="gallery img d-flex align-items-center" style="background-image: url(/Content/images/gallery-3.jpg);">
-                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                        <span class="icon-search"></span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3 ftco-animate">
-                <a href="gallery.html" class="gallery img d-flex align-items-center" style="background-image: url(/Content/images/gallery-4.jpg);">
-                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                        <span class="icon-search"></span>
-                    </div>
-                </a>
             </div>
         </div>
     </div>
@@ -395,7 +130,7 @@
 
                                 <div class="row">
                                     @{ var counter = 0; }
-                                    @foreach (var item in ViewBag.Jucarii)
+                                    @foreach (var item in ViewBag.JucariiHandmade)
                                     {
                                         if (counter < 3)
                                         {
@@ -426,7 +161,7 @@
                             <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
                                 <div class="row">
                                     @{ counter = 0;}
-                                    @foreach (var item in ViewBag.Gentute)
+                                    @foreach (var item in ViewBag.Botosei)
                                     {
                                         if (counter < 3)
                                         {
@@ -455,7 +190,7 @@
                             <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
                                 <div class="row">
                                     @{ counter = 0;}
-                                    @foreach (var item in ViewBag.ArticoleCopii)
+                                    @foreach (var item in ViewBag.BijuteriiHandmade)
                                     {
                                         if (counter < 3)
                                         {
@@ -485,149 +220,6 @@
         </div>
     </div>
 </section>
-
-<section class="ftco-section img" id="ftco-testimony" style="background-image: url(/Content/images/bg_1.jpg);" data-stellar-background-ratio="0.5">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-7 heading-section text-center ftco-animate">
-                <span class="subheading">Testimony</span>
-                <h2 class="mb-4">Customers Says</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-wrap">
-        <div class="row d-flex no-gutters">
-            <div class="col-lg align-self-sm-end ftco-animate">
-                <div class="testimony">
-                    <blockquote>
-                        <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small.&rdquo;</p>
-                    </blockquote>
-                    <div class="author d-flex mt-4">
-                        <div class="image mr-3 align-self-center">
-                            <img src="~/Content/images/person_1.jpg" alt="">
-                        </div>
-                        <div class="name align-self-center">Louise Kelly <span class="position">Illustrator Designer</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg align-self-sm-end">
-                <div class="testimony overlay">
-                    <blockquote>
-                        <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.&rdquo;</p>
-                    </blockquote>
-                    <div class="author d-flex mt-4">
-                        <div class="image mr-3 align-self-center">
-                            <img src="~/Content/images/person_2.jpg" alt="">
-                        </div>
-                        <div class="name align-self-center">Louise Kelly <span class="position">Illustrator Designer</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg align-self-sm-end ftco-animate">
-                <div class="testimony">
-                    <blockquote>
-                        <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small  line of blind text by the name. &rdquo;</p>
-                    </blockquote>
-                    <div class="author d-flex mt-4">
-                        <div class="image mr-3 align-self-center">
-                            <img src="~/Content/images/person_3.jpg" alt="">
-                        </div>
-                        <div class="name align-self-center">Louise Kelly <span class="position">Illustrator Designer</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg align-self-sm-end">
-                <div class="testimony overlay">
-                    <blockquote>
-                        <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however.&rdquo;</p>
-                    </blockquote>
-                    <div class="author d-flex mt-4">
-                        <div class="image mr-3 align-self-center">
-                            <img src="~/Content/images/person_2.jpg" alt="">
-                        </div>
-                        <div class="name align-self-center">Louise Kelly <span class="position">Illustrator Designer</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg align-self-sm-end ftco-animate">
-                <div class="testimony">
-                    <blockquote>
-                        <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small  line of blind text by the name. &rdquo;</p>
-                    </blockquote>
-                    <div class="author d-flex mt-4">
-                        <div class="image mr-3 align-self-center">
-                            <img src="~/Content/images/person_3.jpg" alt="">
-                        </div>
-                        <div class="name align-self-center">Louise Kelly <span class="position">Illustrator Designer</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="ftco-section">
-    <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-            <div class="col-md-7 heading-section ftco-animate text-center">
-                <h2 class="mb-4">Recent from blog</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-            </div>
-        </div>
-        <div class="row d-flex">
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('/Content/images/image_1.jpg');">
-                    </a>
-                    <div class="text py-4 d-block">
-                        <div class="meta">
-                            <div><a href="#">Sept 10, 2018</a></div>
-                            <div><a href="#">Admin</a></div>
-                            <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                        </div>
-                        <h3 class="heading mt-2"><a href="#">The Delicious Pizza</a></h3>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('/Content/images/image_2.jpg');">
-                    </a>
-                    <div class="text py-4 d-block">
-                        <div class="meta">
-                            <div><a href="#">Sept 10, 2018</a></div>
-                            <div><a href="#">Admin</a></div>
-                            <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                        </div>
-                        <h3 class="heading mt-2"><a href="#">The Delicious Pizza</a></h3>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('/Content/images/image_3.jpg');">
-                    </a>
-                    <div class="text py-4 d-block">
-                        <div class="meta">
-                            <div><a href="#">Sept 10, 2018</a></div>
-                            <div><a href="#">Admin</a></div>
-                            <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                        </div>
-                        <h3 class="heading mt-2"><a href="#">The Delicious Pizza</a></h3>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
 
 @section scripts{
     <script>
