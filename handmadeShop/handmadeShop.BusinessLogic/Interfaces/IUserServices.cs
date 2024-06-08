@@ -15,7 +15,7 @@ namespace handmadeShop.BusinessLogic.Interfaces
         Task<ClaimsIdentity> Authenticate(UserDTO userDTO);
         Task SetInitialData(UserDTO adminDto, List<string> roles);
         Task<IEnumerable<UserDTO>> GetAllUsers();
-        Task<OperationDetails> DeleteUserByUsername(string username);
+        Task<OperationDetails> DeleteUserByUserId(string userId);
         Task<UserDTO> GetUserById(string userId);
         Task<OperationDetails> UpdateClient(UserDTO user);
         Task<UserDTO> GetUserByUsername(string username);

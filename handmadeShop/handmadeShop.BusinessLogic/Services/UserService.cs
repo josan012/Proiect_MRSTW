@@ -107,28 +107,28 @@ namespace handmadeShop.BusinessLogic.Services
             }
             await Create(adminDto);
         }
-        public async Task<OperationDetails> DeleteUserByUsername(string username)
+        public async Task<OperationDetails> DeleteUserByUserId(string userId)
         {
-            var user = await Database.UserManager.FindByNameAsync(username);
+            var user = await Database.UserManager.FindByIdAsync(userId);
             if (user == null)
             {
                 return new OperationDetails(false, "User not found", "");
             }
 
-            var orders = Database.Orders.GetAllOrdersWithUsers(user.Id);
-            var reservations = Database.ReservationsRepository.GetByUserId(username);
-            foreach (var order in orders)
+            if (user.Orders != null)
             {
-                Database.Orders.Delete(order.Id, null);
+                var orderIds = user.Orders.Select(o => o.Id).ToList();
+                foreach (var orderId in orderIds)
+                {
+                    Database.Orders.Delete(orderId,null);
+                }
+                Database.Save();
             }
-            foreach (var reservation in reservations)
-            {
-                Database.ReservationsRepository.Delete(reservation.Id, null);
-            }
-            Database.Save();
+
+         
+
             if (user.ClientProfile != null)
             {
-
                 Database.ClientManager.Delete(user.ClientProfile);
                 await Database.SaveAsync();
             }
@@ -137,6 +137,7 @@ namespace handmadeShop.BusinessLogic.Services
 
             if (result.Succeeded)
             {
+                await Database.SaveAsync();
                 return new OperationDetails(true, "User deleted successfully", "");
             }
             else
