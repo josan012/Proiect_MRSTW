@@ -67,23 +67,27 @@ namespace handmadeShop.BusinessLogic.Services
 
                HttpContext.Current.Session.Clear();
           }
-          public void RemoveFromTheCart(int ProductId)
-          {
-               List<Item> cart = GetCart();
-               int index = IsInCart(cart, ProductId);
-               if (cart[index].Quantity > 1)
-               {
-
+     
+        public void RemoveFromTheCart(int ProductId)
+        {
+            List<Item> cart = GetCart();
+            int index = IsInCart(cart, ProductId);
+            if (index != -1) 
+            {
+                if (cart[index].Quantity > 1)
+                {
                     cart[index].Quantity--;
-               }
-               else
-               {
+                }
+                else
+                {
                     cart.RemoveAt(index);
-               }
-               UpdateCart(cart);
-          }
+                }
+                UpdateCart(cart);
+            }
+        }
 
-          public void Dispose()
+
+        public void Dispose()
           {
                DataBase.Dispose();
           }

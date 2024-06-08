@@ -61,7 +61,7 @@
                                                 <a href="#" class="menu-img img mb-4" style="background-image: url(@item.PathImage);"></a>
                                                 <div class="text">
                                                     <h3><a href="#">@item.Name</a></h3>
-                                                    <p class="price"><span>MDL @item.Price</span></p>
+                                                    <p class="price"><span>$ @item.Price</span></p>
                                                     <form id="add-item-form" data-item-id="@item.Id" data-item-category="MainDish" action="@Url.Action("AddToCart", "Buy", new { ProductId = item.Id, category = "Gentuțe handmade" })" method="post">
                                                         @Html.AntiForgeryToken()
                                                         <button type="submit" class="btn btn-primary btn-outline-primary add-to-cart">Add To Cart</button>
@@ -82,7 +82,7 @@
                                                 <a href="#" class="menu-img img mb-4" style="background-image: url(@item.PathImage);"></a>
                                                 <div class="text">
                                                     <h3><a href="#">@item.Name</a></h3>
-                                                    <p class="price"><span>MDL @item.Price</span></p>
+                                                    <p class="price"><span>$ @item.Price</span></p>
                                                     <form id="add-item-form" data-item-id="@item.Id" data-item-category="Drink" action="@Url.Action("AddToCart", "Buy", new { ProductId = item.Id, category = "Jucării handmade" })" method="post">
                                                         @Html.AntiForgeryToken()
                                                         <button type="submit" class="btn btn-primary btn-outline-primary add-to-cart">Add To Cart</button>
@@ -103,7 +103,7 @@
                                                 <a href="#" class="menu-img img mb-4" style="background-image: url(@item.PathImage);"></a>
                                                 <div class="text">
                                                     <h3><a href="#">@item.Name</a></h3>
-                                                    <p class="price"><span>MDL @item.Price</span></p>
+                                                    <p class="price"><span>$ @item.Price</span></p>
                                                     <form id="add-item-form" data-item-id="@item.Id" data-item-category="Drink" action="@Url.Action("AddToCart", "Buy", new { ProductId = item.Id, category = "Botoșei" })" method="post">
                                                         @Html.AntiForgeryToken()
                                                         <button type="submit" class="btn btn-primary btn-outline-primary add-to-cart">Add To Cart</button>
@@ -124,7 +124,7 @@
                                                 <a href="#" class="menu-img img mb-4" style="background-image: url(@item.PathImage);"></a>
                                                 <div class="text">
                                                     <h3><a href="#">@item.Name</a></h3>
-                                                    <p class="price"><span>MDL @item.Price</span></p>
+                                                    <p class="price"><span>$ @item.Price</span></p>
                                                     <form id="add-item-form" data-item-id="@item.Id" data-item-category="Drink" action="@Url.Action("AddToCart", "Buy", new { ProductId = item.Id, category = "Bijuterii handmade" })" method="post">
                                                         @Html.AntiForgeryToken()
                                                         <button type="submit" class="btn btn-primary btn-outline-primary add-to-cart">Add To Cart</button>
@@ -145,7 +145,7 @@
                                                 <a href="#" class="menu-img img mb-4" style="background-image: url(@item.PathImage);"></a>
                                                 <div class="text">
                                                     <h3><a href="#">@item.Name</a></h3>
-                                                    <p class="price"><span>MDL @item.Price</span></p>
+                                                    <p class="price"><span>$ @item.Price</span></p>
                                                     <form id="add-item-form" data-item-id="@item.Id" data-item-category="Dessert" action="@Url.Action("AddToCart", "Buy", new { ProductId = item.Id, category = "Păturică handmade" })" method="post">
                                                         @Html.AntiForgeryToken()
                                                         <button type="submit" class="btn btn-primary btn-outline-primary add-to-cart">Add To Cart</button>

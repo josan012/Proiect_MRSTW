@@ -559,9 +559,9 @@ namespace handmadeShop.Web.Controllers
             return new UserDTO
             {
                 Email = "drogomankatalin@gmail.com",
-                UserName = "Admin",
+                UserName = "Catalin",
                 Password = "123456",
-                Name = "Application Admin",
+                Name = "Drogoman Catalin",
                 Address = "Studentilor 9/11",
                 Role = "admin",
             };
