@@ -249,6 +249,10 @@
     <Content Include="Content\fonts\ionicons\css\ionicons.min.css" />
     <Content Include="Content\fonts\ionicons\fonts\ionicons.svg" />
     <Content Include="Content\fonts\open-iconic\open-iconic.svg" />
+    <Content Include="Content\images\Background1.jpeg" />
+    <Content Include="Content\images\Background2.jpg" />
+    <Content Include="Content\images\BaseBackground.jpg" />
+    <Content Include="Content\images\CatalinAdmin.jpg" />
     <Content Include="Content\images\client.jpg" />
     <Content Include="Content\images\Admin.jpg" />
     <Content Include="Content\images\about.jpg" />

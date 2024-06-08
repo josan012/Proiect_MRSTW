@@ -11,27 +11,26 @@
                 <li class="nav-item @(ViewBag.CurrentAction == "Index" ? "active" : "")">@Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" })</li>
                 <li class="nav-item @(ViewBag.CurrentAction == "Products" ? "active" : "")">@Html.ActionLink("Products", "Menu", "Home", null, new { @class = "nav-link" })</li>
                 <li class="nav-item @(ViewBag.CurrentAction == "Services" ? "active" : "")">@Html.ActionLink("Services", "Services", "Home", null, new { @class = "nav-link" })</li>
-                <li class="nav-item @(ViewBag.CurrentAction == "Blog" ? "active" : "")">@Html.ActionLink("Blog", "Blog", "Home", null, new { @class = "nav-link" })</li>
-                <li class="nav-item @(ViewBag.CurrentAction == "About" ? "active" : "")">@Html.ActionLink("About", "About", "Home", null, new { @class = "nav-link" })</li>
-
-                <li class="nav-item dropdown">
+              
+                @*<li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
                     <div class="dropdown-menu" aria-labelledby="shopDropdown">
                         @Html.ActionLink("Shop", "Shop", "Buy", null, new { @class = "dropdown-item" })
                         @Html.ActionLink("Cart", "Cart", "Buy", null, new { @class = "dropdown-item" })
                         @Html.ActionLink("Checkout", "Checkout", "Buy", null, new { @class = "dropdown-item" })
                     </div>
-                </li>
+                </li>*@
 
-                <li class="nav-item @(ViewBag.CurrentAction == "Contact" ? "active" : "")">@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-link" })</li>
-
+                @*<li class="nav-item @(ViewBag.CurrentAction == "Contact" ? "active" : "")">@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-link" })</li>
+*@
                 @if (Request.IsAuthenticated)
                 {
                     <li class="nav-item dropdown">
                         @if (User.IsInRole("admin"))
                         {
                             <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Hello, @User.Identity.GetUserName()!
+                               @* Hello, @User.Identity.GetUserName()!*@
+                                Actions
                             </a>
                             <div class="dropdown-menu" aria-labelledby="adminDropdown">
                                 @Html.ActionLink("Admin Dashboard", "AdminDashboard", "Account", null, new { @class = "dropdown-item" })
@@ -46,7 +45,8 @@
                         else
                         {
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Hello, @User.Identity.GetUserName()!
+                                @*Hello, @User.Identity.GetUserName()!*@
+                                Actions
                             </a>
                             <div class="dropdown-menu" aria-labelledby="userDropdown">
                                 @Html.ActionLink("Client Profile", "ClientProfile", "Account", new { Id = User.Identity.GetUserId() }, new { @class = "dropdown-item" })

@@ -16,7 +16,7 @@
                 <div class="product-item">
                     <h6>@item.Name</h6>
                     <img src="@item.PathImage" alt="@item.Name" style="width: 200px;">
-                    <p>Price: MDL @item.Price</p>
+                    <p>Price: $ @item.Price</p>
                     @Html.ActionLink("Edit Product", "EditExistingProduct", new { Id = item.Id, category = item.Category }, new { @class = "btn btn-primary btn-outline-primary" })
                     @using (Html.BeginForm("DeleteProduct", "Account", new { productId = item.Id }, FormMethod.Post, new { @class = "removeProductForm-" + item.Id }))
                     {
