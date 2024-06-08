@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4DE94DE-8D82-4F8C-8FF0-B16E7FF09BA5}|handmadeShop.Webb\\handmadeShop.Web.csproj|C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeshop.webb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B4DE94DE-8D82-4F8C-8FF0-B16E7FF09BA5}|handmadeShop.Webb\\handmadeShop.Web.csproj|solutionrelative:handmadeshop.webb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1984CC5A-F9DF-4F3E-91A6-4860B7EC4ACE}|handmadeShop.BusinessLogic\\handmadeShop.BusinessLogic.csproj|c:\\proiect_mrsutw\\proiect_mrstw\\handmadeshop\\handmadeshop.businesslogic\\interfaces\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1984CC5A-F9DF-4F3E-91A6-4860B7EC4ACE}|handmadeShop.BusinessLogic\\handmadeShop.BusinessLogic.csproj|solutionrelative:handmadeshop.businesslogic\\interfaces\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1984CC5A-F9DF-4F3E-91A6-4860B7EC4ACE}|handmadeShop.BusinessLogic\\handmadeShop.BusinessLogic.csproj|c:\\proiect_mrsutw\\proiect_mrstw\\handmadeshop\\handmadeshop.businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1984CC5A-F9DF-4F3E-91A6-4860B7EC4ACE}|handmadeShop.BusinessLogic\\handmadeShop.BusinessLogic.csproj|solutionrelative:handmadeshop.businesslogic\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AB02190-F53E-4BC5-9F6B-9C20DE84EDD4}|handmadeShop.Domain\\handmadeShop.Domain.csproj|c:\\proiect_mrsutw\\proiect_mrstw\\handmadeshop\\handmadeshop.domain\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AB02190-F53E-4BC5-9F6B-9C20DE84EDD4}|handmadeShop.Domain\\handmadeShop.Domain.csproj|solutionrelative:handmadeshop.domain\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4DE94DE-8D82-4F8C-8FF0-B16E7FF09BA5}|handmadeShop.Webb\\handmadeShop.Web.csproj|c:\\proiect_mrsutw\\proiect_mrstw\\handmadeshop\\handmadeshop.webb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4DE94DE-8D82-4F8C-8FF0-B16E7FF09BA5}|handmadeShop.Webb\\handmadeShop.Web.csproj|solutionrelative:handmadeshop.webb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4DE94DE-8D82-4F8C-8FF0-B16E7FF09BA5}|handmadeShop.Webb\\handmadeShop.Web.csproj|c:\\proiect_mrsutw\\proiect_mrstw\\handmadeshop\\handmadeshop.webb\\views\\account\\otherusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4DE94DE-8D82-4F8C-8FF0-B16E7FF09BA5}|handmadeShop.Webb\\handmadeShop.Web.csproj|solutionrelative:handmadeshop.webb\\views\\account\\otherusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4DE94DE-8D82-4F8C-8FF0-B16E7FF09BA5}|handmadeShop.Webb\\handmadeShop.Web.csproj|c:\\proiect_mrsutw\\proiect_mrstw\\handmadeshop\\handmadeshop.webb\\views\\account\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4DE94DE-8D82-4F8C-8FF0-B16E7FF09BA5}|handmadeShop.Webb\\handmadeShop.Web.csproj|solutionrelative:handmadeshop.webb\\views\\account\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +39,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Webb\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "handmadeShop.Webb\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Webb\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "handmadeShop.Webb\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAANIAAAAAAAAAAAAAAOMAAAA9AAAA",
+              "Title": "IUserServices.cs",
+              "DocumentMoniker": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.BusinessLogic\\Interfaces\\IUserServices.cs",
+              "RelativeDocumentMoniker": "handmadeShop.BusinessLogic\\Interfaces\\IUserServices.cs",
+              "ToolTip": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.BusinessLogic\\Interfaces\\IUserServices.cs",
+              "RelativeToolTip": "handmadeShop.BusinessLogic\\Interfaces\\IUserServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBEAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T12:29:00.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Domain\\Repositories\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "handmadeShop.Domain\\Repositories\\OrderRepository.cs",
+              "ToolTip": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Domain\\Repositories\\OrderRepository.cs",
+              "RelativeToolTip": "handmadeShop.Domain\\Repositories\\OrderRepository.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T12:27:42.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.BusinessLogic\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "handmadeShop.BusinessLogic\\Services\\UserService.cs",
+              "ToolTip": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.BusinessLogic\\Services\\UserService.cs",
+              "RelativeToolTip": "handmadeShop.BusinessLogic\\Services\\UserService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwA8AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T12:26:21.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Webb\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "handmadeShop.Webb\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Webb\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "handmadeShop.Webb\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAALkBAAAAmpmZmZkdwMgBAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T12:21:27.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OtherUsers.cshtml",
+              "DocumentMoniker": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Webb\\Views\\Account\\OtherUsers.cshtml",
+              "RelativeDocumentMoniker": "handmadeShop.Webb\\Views\\Account\\OtherUsers.cshtml",
+              "ToolTip": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Webb\\Views\\Account\\OtherUsers.cshtml",
+              "RelativeToolTip": "handmadeShop.Webb\\Views\\Account\\OtherUsers.cshtml",
+              "ViewState": "AQIAABsAAACAMzMzM7MiwCgAAABxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-08T10:57:19.967Z",
+              "WhenOpened": "2024-06-08T12:19:58.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminDashboard.cshtml",
+              "DocumentMoniker": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Webb\\Views\\Account\\AdminDashboard.cshtml",
+              "RelativeDocumentMoniker": "handmadeShop.Webb\\Views\\Account\\AdminDashboard.cshtml",
+              "ToolTip": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Webb\\Views\\Account\\AdminDashboard.cshtml",
+              "RelativeToolTip": "handmadeShop.Webb\\Views\\Account\\AdminDashboard.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-08T12:19:52.076Z",
               "EditorCaption": ""
             }
           ]

@@ -29,7 +29,7 @@ namespace handmadeShop.Domain.Repositories
                if (order != null)
                     db.Orders.Remove(order);
           }
-
+          
           public IEnumerable<Order> Find(Func<Order, bool> predicate)
           {
                return db.Orders.Where(predicate).ToList();

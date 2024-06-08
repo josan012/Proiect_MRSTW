@@ -18,6 +18,7 @@ using System.Web.UI.WebControls;
 using handmadeShop.BusinessLogic.BusinessModels;
 using handmadeShop.Web.Models;
 using System.IO;
+using handmadeShop.BusinessLogic.Services;
 
 namespace handmadeShop.Web.Controllers
 {
@@ -448,15 +449,14 @@ namespace handmadeShop.Web.Controllers
 
         [Authorize(Roles = "admin")]
         [HttpPost]
-        public async Task<ActionResult> DeleteUser(string username)
+        public async Task<ActionResult> DeleteUser(string userId)
         {
-            if (username == null)
+            if (userId == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+            var result = await UserService.DeleteUserByUserId(userId);
 
-            
-            var result = await UserService.DeleteUserByUsername(username);
             if (result.Succeeded)
             {
                 TempData["SuccessMessage"] = "User deleted successfully.";
@@ -465,7 +465,6 @@ namespace handmadeShop.Web.Controllers
             {
                 TempData["ErrorMessage"] = "Failed to delete user.";
             }
-
             return RedirectToAction("OtherUsers");
         }
 
