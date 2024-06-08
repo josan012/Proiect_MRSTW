@@ -7281,7 +7281,7 @@ body {
   line-height: 1.8;
   font-weight: 300;
   color: gray;
-  background: url(../images/BaseBackground.jpg) no-repeat fixed;
+  background: url(../images/AnotherBackground.jpg) no-repeat fixed;
   background-size: cover; }
   body.menu-show {
     overflow: hidden;
@@ -7956,15 +7956,16 @@ h1, h2, h3, h4, h5,
       font-size: 18px; }
       .pricing-entry .text h3 span {
         background: #151111;
-        background: url(../images/BaseBackground.jpg) no-repeat fixed;
+        background: url(../images/AnotherBackground.jpg) no-repeat fixed;
         padding-right: 20px; }
     .pricing-entry .text .price {
-      width: 80px;
-      color: #c49b63;
-      text-align: right;
-      background: #151111;
-      background: url(../images/BaseBackground.jpg) no-repeat fixed;
-      font-size: 16px; }
+        width: 80px;
+        color: #c49b63;
+        text-align: right;
+        background: #151111;
+        background: url(../images/AnotherBackground.jpg) no-repeat fixed;
+        font-size: 16px;
+    }
 
 .menu-entry {
   margin-bottom: 30px; }

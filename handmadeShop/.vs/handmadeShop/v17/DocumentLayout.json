@@ -3,11 +3,7 @@
   "WorkspaceRootPath": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4DE94DE-8D82-4F8C-8FF0-B16E7FF09BA5}|handmadeShop.Webb\\handmadeShop.Web.csproj|c:\\proiect_mrsutw\\proiect_mrstw\\handmadeshop\\handmadeshop.webb\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{B4DE94DE-8D82-4F8C-8FF0-B16E7FF09BA5}|handmadeShop.Webb\\handmadeShop.Web.csproj|solutionrelative:handmadeshop.webb\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4DE94DE-8D82-4F8C-8FF0-B16E7FF09BA5}|handmadeShop.Webb\\handmadeShop.Web.csproj|c:\\proiect_mrsutw\\proiect_mrstw\\handmadeshop\\handmadeshop.webb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B4DE94DE-8D82-4F8C-8FF0-B16E7FF09BA5}|handmadeShop.Webb\\handmadeShop.Web.csproj|C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeshop.webb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B4DE94DE-8D82-4F8C-8FF0-B16E7FF09BA5}|handmadeShop.Webb\\handmadeShop.Web.csproj|solutionrelative:handmadeshop.webb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -23,25 +19,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "style.css",
-              "DocumentMoniker": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Webb\\Content\\css\\style.css",
-              "RelativeDocumentMoniker": "handmadeShop.Webb\\Content\\css\\style.css",
-              "ToolTip": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Webb\\Content\\css\\style.css",
-              "RelativeToolTip": "handmadeShop.Webb\\Content\\css\\style.css",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABoAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-06-08T11:13:31.762Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Webb\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "handmadeShop.Webb\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Proiect_MRSUTW\\Proiect_MRSTW\\handmadeShop\\handmadeShop.Webb\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "handmadeShop.Webb\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAANIAAAAAAAAAAAAAAOUAAAA6AAAA",
+              "ViewState": "AQIAANIAAAAAAAAAAAAAAOMAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-08T10:57:19.967Z",
               "EditorCaption": ""
